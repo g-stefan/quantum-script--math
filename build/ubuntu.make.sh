@@ -18,5 +18,5 @@ cmdX(){
 }
 
 cmdX file-to-cs --touch=source/quantum-script-extension-math.cpp --file-in=source/quantum-script-extension-math.js --file-out=source/quantum-script-extension-math.src --is-string --name=extensionMathSource
-cmdX xyo-cc --mode=$ACTION @util/quantum-script-extension-math.static.compile
-cmdX xyo-cc --mode=$ACTION @util/quantum-script-extension-math.dynamic.compile
+cmdX xyo-cc --mode=$ACTION @build/source/quantum-script-extension-math.static.compile
+cmdX xyo-cc --mode=$ACTION @build/source/quantum-script-extension-math.dynamic.compile
