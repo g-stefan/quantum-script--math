@@ -12,6 +12,5 @@
 #include "quantum-script-extension-math-license.cpp"
 
 #ifndef QUANTUM_SCRIPT_EXTENSION_MATH_NO_VERSION
-#include "quantum-script-extension-math-version.cpp"
+#	include "quantum-script-extension-math-version.cpp"
 #endif
-

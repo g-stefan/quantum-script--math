@@ -11,7 +11,7 @@
 #define QUANTUM_SCRIPT_EXTENSION_MATH_LICENSE_HPP
 
 #ifndef QUANTUM_SCRIPT_EXTENSION_MATH__EXPORT_HPP
-#include "quantum-script-extension-math--export.hpp"
+#	include "quantum-script-extension-math--export.hpp"
 #endif
 
 namespace Quantum {

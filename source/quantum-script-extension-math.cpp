@@ -16,7 +16,7 @@
 #include "quantum-script-extension-math-license.hpp"
 #include "quantum-script-extension-math.hpp"
 #ifndef QUANTUM_SCRIPT_EXTENSION_MATH_NO_VERSION
-#include "quantum-script-extension-math-version.hpp"
+#	include "quantum-script-extension-math-version.hpp"
 #endif
 
 #include "quantum-script-variablenumber.hpp"
@@ -39,7 +39,6 @@ namespace Quantum {
 #endif
 					return VariableNumber::newVariable(fabs((arguments->index(0))->toNumber()));
 				};
-
 
 				static TPointer<Variable> mathAcos(VariableFunction *function, Variable *this_, VariableArray *arguments) {
 #ifdef QUANTUM_SCRIPT_DEBUG_RUNTIME
@@ -200,13 +199,13 @@ namespace Quantum {
 					printf("- math-sign\n");
 #endif
 					Number value = (arguments->index(0))->toNumber();
-					if(isnan(value)) {
+					if (isnan(value)) {
 						return VariableNumber::newVariable(NAN);
 					};
-					if(value < 0.0) {
+					if (value < 0.0) {
 						return VariableNumber::newVariable(-1);
 					};
-					if(value > 0.0) {
+					if (value > 0.0) {
 						return VariableNumber::newVariable(1);
 					};
 					return VariableNumber::newVariable(0);
@@ -259,7 +258,7 @@ namespace Quantum {
 				};
 
 				void initExecutive(Executive *executive, void *extensionId) {
-					srand (static_cast <unsigned> (time(nullptr)));
+					srand(static_cast<unsigned>(time(nullptr)));
 
 					String info = "Math\r\n";
 					info << License::shortContent();
@@ -305,7 +304,6 @@ namespace Quantum {
 					executive->compileStringX(extensionMathSource);
 				};
 
-
 			};
 		};
 	};
@@ -316,4 +314,3 @@ extern "C" QUANTUM_SCRIPT_EXTENSION_MATH_EXPORT void quantumScriptExtension(Quan
 	Quantum::Script::Extension::Math::initExecutive(executive, extensionId);
 };
 #endif
-
