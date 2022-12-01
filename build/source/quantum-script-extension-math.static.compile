@@ -1,6 +1,0 @@
---lib qse-math
---project-base=quantum-script-extension-math
---build-include
---use-project=quantum-script.static
---install-dev
---install-inc=quantum-script-extension
