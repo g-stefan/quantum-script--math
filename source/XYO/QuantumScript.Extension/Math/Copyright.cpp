@@ -13,7 +13,6 @@ namespace XYO::QuantumScript::Extension::Math::Copyright {
 	static const char *publisher_ = XYO_QUANTUMSCRIPT_EXTENSION_MATH_PUBLISHER;
 	static const char *company_ = XYO_QUANTUMSCRIPT_EXTENSION_MATH_COMPANY;
 	static const char *contact_ = XYO_QUANTUMSCRIPT_EXTENSION_MATH_CONTACT;
-	static const char *fullCopyright_ = XYO_QUANTUMSCRIPT_EXTENSION_MATH_FULL_COPYRIGHT;
 
 	const char *copyright() {
 		return copyright_;
@@ -29,10 +28,6 @@ namespace XYO::QuantumScript::Extension::Math::Copyright {
 
 	const char *contact() {
 		return contact_;
-	};
-
-	const char *fullCopyright() {
-		return fullCopyright_;
 	};
 
 };
