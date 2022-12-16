@@ -16,168 +16,168 @@
 namespace XYO::QuantumScript::Extension::Math {
 
 	static TPointer<Variable> mathAbs(VariableFunction *function, Variable *this_, VariableArray *arguments) {
-#ifdef QUANTUM_SCRIPT_DEBUG_RUNTIME
+#ifdef XYO_QUANTUMSCRIPT_DEBUG_RUNTIME
 		printf("- math-abs\n");
 #endif
 		return VariableNumber::newVariable(fabs((arguments->index(0))->toNumber()));
 	};
 
 	static TPointer<Variable> mathAcos(VariableFunction *function, Variable *this_, VariableArray *arguments) {
-#ifdef QUANTUM_SCRIPT_DEBUG_RUNTIME
+#ifdef XYO_QUANTUMSCRIPT_DEBUG_RUNTIME
 		printf("- math-acos\n");
 #endif
 		return VariableNumber::newVariable(acos((arguments->index(0))->toNumber()));
 	};
 
 	static TPointer<Variable> mathAcosh(VariableFunction *function, Variable *this_, VariableArray *arguments) {
-#ifdef QUANTUM_SCRIPT_DEBUG_RUNTIME
+#ifdef XYO_QUANTUMSCRIPT_DEBUG_RUNTIME
 		printf("- math-acosh\n");
 #endif
 		return VariableNumber::newVariable(acosh((arguments->index(0))->toNumber()));
 	};
 
 	static TPointer<Variable> mathAsin(VariableFunction *function, Variable *this_, VariableArray *arguments) {
-#ifdef QUANTUM_SCRIPT_DEBUG_RUNTIME
+#ifdef XYO_QUANTUMSCRIPT_DEBUG_RUNTIME
 		printf("- math-asin\n");
 #endif
 		return VariableNumber::newVariable(asin((arguments->index(0))->toNumber()));
 	};
 
 	static TPointer<Variable> mathAsinh(VariableFunction *function, Variable *this_, VariableArray *arguments) {
-#ifdef QUANTUM_SCRIPT_DEBUG_RUNTIME
+#ifdef XYO_QUANTUMSCRIPT_DEBUG_RUNTIME
 		printf("- math-asinh\n");
 #endif
 		return VariableNumber::newVariable(asinh((arguments->index(0))->toNumber()));
 	};
 
 	static TPointer<Variable> mathAtan(VariableFunction *function, Variable *this_, VariableArray *arguments) {
-#ifdef QUANTUM_SCRIPT_DEBUG_RUNTIME
+#ifdef XYO_QUANTUMSCRIPT_DEBUG_RUNTIME
 		printf("- math-atan\n");
 #endif
 		return VariableNumber::newVariable(atan((arguments->index(0))->toNumber()));
 	};
 
 	static TPointer<Variable> mathAtanh(VariableFunction *function, Variable *this_, VariableArray *arguments) {
-#ifdef QUANTUM_SCRIPT_DEBUG_RUNTIME
+#ifdef XYO_QUANTUMSCRIPT_DEBUG_RUNTIME
 		printf("- math-atanh\n");
 #endif
 		return VariableNumber::newVariable(atanh((arguments->index(0))->toNumber()));
 	};
 
 	static TPointer<Variable> mathAtan2(VariableFunction *function, Variable *this_, VariableArray *arguments) {
-#ifdef QUANTUM_SCRIPT_DEBUG_RUNTIME
+#ifdef XYO_QUANTUMSCRIPT_DEBUG_RUNTIME
 		printf("- math-atan2\n");
 #endif
 		return VariableNumber::newVariable(atan2((arguments->index(0))->toNumber(), (arguments->index(1))->toNumber()));
 	};
 
 	static TPointer<Variable> mathCbrt(VariableFunction *function, Variable *this_, VariableArray *arguments) {
-#ifdef QUANTUM_SCRIPT_DEBUG_RUNTIME
+#ifdef XYO_QUANTUMSCRIPT_DEBUG_RUNTIME
 		printf("- math-cbrt\n");
 #endif
 		return VariableNumber::newVariable(cbrt((arguments->index(0))->toNumber()));
 	};
 
 	static TPointer<Variable> mathCeil(VariableFunction *function, Variable *this_, VariableArray *arguments) {
-#ifdef QUANTUM_SCRIPT_DEBUG_RUNTIME
+#ifdef XYO_QUANTUMSCRIPT_DEBUG_RUNTIME
 		printf("- math-ceil\n");
 #endif
 		return VariableNumber::newVariable(ceil((arguments->index(0))->toNumber()));
 	};
 
 	static TPointer<Variable> mathCos(VariableFunction *function, Variable *this_, VariableArray *arguments) {
-#ifdef QUANTUM_SCRIPT_DEBUG_RUNTIME
+#ifdef XYO_QUANTUMSCRIPT_DEBUG_RUNTIME
 		printf("- math-cos\n");
 #endif
 		return VariableNumber::newVariable(cos((arguments->index(0))->toNumber()));
 	};
 
 	static TPointer<Variable> mathCosh(VariableFunction *function, Variable *this_, VariableArray *arguments) {
-#ifdef QUANTUM_SCRIPT_DEBUG_RUNTIME
+#ifdef XYO_QUANTUMSCRIPT_DEBUG_RUNTIME
 		printf("- math-cosh\n");
 #endif
 		return VariableNumber::newVariable(cosh((arguments->index(0))->toNumber()));
 	};
 
 	static TPointer<Variable> mathExp(VariableFunction *function, Variable *this_, VariableArray *arguments) {
-#ifdef QUANTUM_SCRIPT_DEBUG_RUNTIME
+#ifdef XYO_QUANTUMSCRIPT_DEBUG_RUNTIME
 		printf("- math-exp\n");
 #endif
 		return VariableNumber::newVariable(exp((arguments->index(0))->toNumber()));
 	};
 
 	static TPointer<Variable> mathExpm1(VariableFunction *function, Variable *this_, VariableArray *arguments) {
-#ifdef QUANTUM_SCRIPT_DEBUG_RUNTIME
+#ifdef XYO_QUANTUMSCRIPT_DEBUG_RUNTIME
 		printf("- math-expm1\n");
 #endif
 		return VariableNumber::newVariable(expm1((arguments->index(0))->toNumber()));
 	};
 
 	static TPointer<Variable> mathFloor(VariableFunction *function, Variable *this_, VariableArray *arguments) {
-#ifdef QUANTUM_SCRIPT_DEBUG_RUNTIME
+#ifdef XYO_QUANTUMSCRIPT_DEBUG_RUNTIME
 		printf("- math-floor\n");
 #endif
 		return VariableNumber::newVariable(floor((arguments->index(0))->toNumber()));
 	};
 
 	static TPointer<Variable> mathImul(VariableFunction *function, Variable *this_, VariableArray *arguments) {
-#ifdef QUANTUM_SCRIPT_DEBUG_RUNTIME
+#ifdef XYO_QUANTUMSCRIPT_DEBUG_RUNTIME
 		printf("- math-imul\n");
 #endif
 		return VariableNumber::newVariable(((Integer)((arguments->index(0))->toNumber())) * (((Integer)((arguments->index(1))->toNumber()))));
 	};
 
 	static TPointer<Variable> mathLog(VariableFunction *function, Variable *this_, VariableArray *arguments) {
-#ifdef QUANTUM_SCRIPT_DEBUG_RUNTIME
+#ifdef XYO_QUANTUMSCRIPT_DEBUG_RUNTIME
 		printf("- math-log\n");
 #endif
 		return VariableNumber::newVariable(log((arguments->index(0))->toNumber()));
 	};
 
 	static TPointer<Variable> mathLog1p(VariableFunction *function, Variable *this_, VariableArray *arguments) {
-#ifdef QUANTUM_SCRIPT_DEBUG_RUNTIME
+#ifdef XYO_QUANTUMSCRIPT_DEBUG_RUNTIME
 		printf("- math-log1p\n");
 #endif
 		return VariableNumber::newVariable(log1p((arguments->index(0))->toNumber()));
 	};
 
 	static TPointer<Variable> mathLog10(VariableFunction *function, Variable *this_, VariableArray *arguments) {
-#ifdef QUANTUM_SCRIPT_DEBUG_RUNTIME
+#ifdef XYO_QUANTUMSCRIPT_DEBUG_RUNTIME
 		printf("- math-log10\n");
 #endif
 		return VariableNumber::newVariable(log10((arguments->index(0))->toNumber()));
 	};
 
 	static TPointer<Variable> mathLog2(VariableFunction *function, Variable *this_, VariableArray *arguments) {
-#ifdef QUANTUM_SCRIPT_DEBUG_RUNTIME
+#ifdef XYO_QUANTUMSCRIPT_DEBUG_RUNTIME
 		printf("- math-log2\n");
 #endif
 		return VariableNumber::newVariable(log2((arguments->index(0))->toNumber()));
 	};
 
 	static TPointer<Variable> mathPow(VariableFunction *function, Variable *this_, VariableArray *arguments) {
-#ifdef QUANTUM_SCRIPT_DEBUG_RUNTIME
+#ifdef XYO_QUANTUMSCRIPT_DEBUG_RUNTIME
 		printf("- math-pow\n");
 #endif
 		return VariableNumber::newVariable(pow((arguments->index(0))->toNumber(), (arguments->index(1))->toNumber()));
 	};
 
 	static TPointer<Variable> mathRandom(VariableFunction *function, Variable *this_, VariableArray *arguments) {
-#ifdef QUANTUM_SCRIPT_DEBUG_RUNTIME
+#ifdef XYO_QUANTUMSCRIPT_DEBUG_RUNTIME
 		printf("- math-random\n");
 #endif
 		return VariableNumber::newVariable(((Number)rand()) / (RAND_MAX + 1.0));
 	};
 
 	static TPointer<Variable> mathRound(VariableFunction *function, Variable *this_, VariableArray *arguments) {
-#ifdef QUANTUM_SCRIPT_DEBUG_RUNTIME
+#ifdef XYO_QUANTUMSCRIPT_DEBUG_RUNTIME
 		printf("- math-round\n");
 #endif
 		return VariableNumber::newVariable(round((arguments->index(0))->toNumber()));
 	};
 
 	static TPointer<Variable> mathSign(VariableFunction *function, Variable *this_, VariableArray *arguments) {
-#ifdef QUANTUM_SCRIPT_DEBUG_RUNTIME
+#ifdef XYO_QUANTUMSCRIPT_DEBUG_RUNTIME
 		printf("- math-sign\n");
 #endif
 		Number value = (arguments->index(0))->toNumber();
@@ -194,42 +194,42 @@ namespace XYO::QuantumScript::Extension::Math {
 	};
 
 	static TPointer<Variable> mathSin(VariableFunction *function, Variable *this_, VariableArray *arguments) {
-#ifdef QUANTUM_SCRIPT_DEBUG_RUNTIME
+#ifdef XYO_QUANTUMSCRIPT_DEBUG_RUNTIME
 		printf("- math-sin\n");
 #endif
 		return VariableNumber::newVariable(sin((arguments->index(0))->toNumber()));
 	};
 
 	static TPointer<Variable> mathSinh(VariableFunction *function, Variable *this_, VariableArray *arguments) {
-#ifdef QUANTUM_SCRIPT_DEBUG_RUNTIME
+#ifdef XYO_QUANTUMSCRIPT_DEBUG_RUNTIME
 		printf("- math-sinh\n");
 #endif
 		return VariableNumber::newVariable(sinh((arguments->index(0))->toNumber()));
 	};
 
 	static TPointer<Variable> mathSqrt(VariableFunction *function, Variable *this_, VariableArray *arguments) {
-#ifdef QUANTUM_SCRIPT_DEBUG_RUNTIME
+#ifdef XYO_QUANTUMSCRIPT_DEBUG_RUNTIME
 		printf("- math-sqrt\n");
 #endif
 		return VariableNumber::newVariable(sqrt((arguments->index(0))->toNumber()));
 	};
 
 	static TPointer<Variable> mathTan(VariableFunction *function, Variable *this_, VariableArray *arguments) {
-#ifdef QUANTUM_SCRIPT_DEBUG_RUNTIME
+#ifdef XYO_QUANTUMSCRIPT_DEBUG_RUNTIME
 		printf("- math-tan\n");
 #endif
 		return VariableNumber::newVariable(tan((arguments->index(0))->toNumber()));
 	};
 
 	static TPointer<Variable> mathTanh(VariableFunction *function, Variable *this_, VariableArray *arguments) {
-#ifdef QUANTUM_SCRIPT_DEBUG_RUNTIME
+#ifdef XYO_QUANTUMSCRIPT_DEBUG_RUNTIME
 		printf("- math-tanh\n");
 #endif
 		return VariableNumber::newVariable(tanh((arguments->index(0))->toNumber()));
 	};
 
 	static TPointer<Variable> mathTrunc(VariableFunction *function, Variable *this_, VariableArray *arguments) {
-#ifdef QUANTUM_SCRIPT_DEBUG_RUNTIME
+#ifdef XYO_QUANTUMSCRIPT_DEBUG_RUNTIME
 		printf("- math-trunc\n");
 #endif
 		return VariableNumber::newVariable(trunc((arguments->index(0))->toNumber()));
