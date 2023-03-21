@@ -243,7 +243,7 @@ namespace XYO::QuantumScript::Extension::Math {
 		srand(static_cast<unsigned>(time(nullptr)));
 
 		String info = "Math\r\n";
-		info << License::shortLicense();
+		info << License::shortLicense().c_str();
 
 		executive->setExtensionName(extensionId, "Math");
 		executive->setExtensionInfo(extensionId, info);
